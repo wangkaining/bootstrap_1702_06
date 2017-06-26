@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var txt="";
+                txt+="Width of div: " + $("#div").width() + "</br>";
+                txt+="Height of div: " + $("#div").height();
+                $("#div").html(txt);
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div id="div" style="height:75px;width:200px;padding:10px;margin:3px;border:1px solid blue;background-color:#81DAF5;"></div>
+<br>
+<button>显示 div 的尺寸</button>
+<p> jQuery Exercises</p>
+
+
+</body>
+</html>
